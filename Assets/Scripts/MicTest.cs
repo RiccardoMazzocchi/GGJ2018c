@@ -14,6 +14,8 @@ public class MicTest : MonoBehaviour {
     float timer;
 
     bool micEnd, micStart;
+
+    public Rigidbody ballRB;
     // Use this for initialization
     void Start () {
         ballMov = FindObjectOfType<BallMovement>();
@@ -47,7 +49,10 @@ public class MicTest : MonoBehaviour {
         }
         loudness = GetAveragedVolume() * sensitivity;
         if (loudness > 10)
-        { ballMov.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(ballMov.gameObject.GetComponent<Rigidbody>().velocity.x, 5f, ballMov.gameObject.GetComponent<Rigidbody>().velocity.z); }
+        {
+            ballRB.velocity = new Vector3(ballRB.velocity.x, 5f, ballRB.velocity.z);
+            //ballMov.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(ballMov.gameObject.GetComponent<Rigidbody>().velocity.x, 5f, ballMov.gameObject.GetComponent<Rigidbody>().velocity.z);
+        }
 
     }
     float GetAveragedVolume()

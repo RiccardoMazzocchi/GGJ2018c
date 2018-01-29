@@ -3046,6 +3046,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a641221e2779e31469f5243b5638ca19, type: 3}
   m_IsPrefabParent: 0
+--- !u!82 &1760278173 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82021048593741544, guid: c659a202bd0590745864164b42c72cec,
+    type: 2}
+  m_PrefabInternal: {fileID: 2004572129}
 --- !u!1 &1764788547
 GameObject:
   m_ObjectHideFlags: 0
@@ -3451,6 +3456,16 @@ Prefab:
       value: 
       objectReference: {fileID: 24300002, guid: 59fffb5845fed554e8be2301b71fe48e,
         type: 2}
+    - target: {fileID: 114338784863489074, guid: c659a202bd0590745864164b42c72cec,
+        type: 2}
+      propertyPath: ballRB
+      value: 
+      objectReference: {fileID: 1161100072}
+    - target: {fileID: 114338784863489074, guid: c659a202bd0590745864164b42c72cec,
+        type: 2}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1760278173}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c659a202bd0590745864164b42c72cec, type: 2}
   m_IsPrefabParent: 0
